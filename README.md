@@ -1,2 +1,83 @@
-# Air flights Scraper
- Air flights scraper is a project to scrap the datasets of flights around the airports of the world, accessing on its source and destination airport. It establishes a connection between the source and destination airport per single flight to detect the airplanes routes, in order to determine at the end which airport is the most important according to number of landings. The software looks for datasets first, selects one to web scrape, and then arranges the data for preview. Following that, the data is linked together, and a network frame of nodes and edges is drawn. Next, it analyses this network to calculate each node's degree and betweenness centrality in order to identify the most important airport. Next, using the KDE concept to plot a heatmap based on the locations of each airport in the world map. Lastly, it plots the 2D relationship network in 3D to make the nodes and edges seem like a 3D model. The Tkinter library is used to include all of these characteristics into a graphical user interface, which gives the program a preview.
+# ✈️ Air Flights Scraper
+
+A Python GUI application built with `Tkinter` to visualize flight route data scraped using SerpAPI. The app allows users to scrape data, construct and analyze flight networks, generate 3D visualizations, plot heatmaps, and display various charts.
+
+---
+
+## 🖥 Features
+
+- **Welcome Splash Screen**
+- **Tabbed Interface** with:
+  - `Home`: Navigate between functional modules
+  - `Web Scraping`: Uses SerpAPI to extract flight route datasets
+  - `Network Implementation`: Visualizes flight routes as a graph
+  - `Network Analysis`: Calculates node degrees and betweenness centrality
+  - `Heatmap`: Generates a KDE-based heatmap over mock coordinates
+  - `3D Modelling`: Renders the network in 3D using Matplotlib
+  - `Bonus part`: Displays pie, bar, and histogram charts of top flight routes
+
+---
+
+## 🧰 Requirements
+
+Install required packages with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Here’s a typical `requirements.txt` for this project:
+
+```txt
+tk
+Pillow
+serpapi
+beautifulsoup4
+matplotlib
+numpy
+networkx
+opencv-python
+```
+
+---
+
+## 🚀 How to Run
+
+1. Ensure you have Python 3.x installed.
+2. Place the following image files in the working directory:
+   - `plane.jpg`
+   - `home.jpg`
+   - `web scraping.jpg`
+   - `network.jpg`
+   - `network analysis.jpg`
+   - `heatmap.jpg`
+   - `3d model.jpg`
+   - `world.bmp`
+3. Run the application:
+
+```bash
+python "GUI Ahmed acq.py"
+```
+
+---
+
+## 🔑 Notes
+
+- The script uses a **SerpAPI key** hardcoded in the script. Replace it with your own API key for real usage.
+- Data is fetched dynamically and partially mocked (especially for heatmap generation).
+- The GUI is optimized for screen resolution `1000x600`.
+
+---
+
+## 📸 Screenshots (Optional)
+![screenshot1](screenshot1.png)
+![screenshot2](screenshot2.png)
+![screenshot3](screenshot3.png)
+![screenshot4](screenshot4.png)
+![screenshot5](screenshot5.png)
+![screenshot6](screenshot6.png)
+---
+
+## 📄 License
+
+This project is for educational university project.
